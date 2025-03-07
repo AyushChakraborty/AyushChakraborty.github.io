@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cool_rust.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github-dark.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/rust.min.js"></script>
+    <script>hljs.highlightAll();</script>
+    <title>Cool analogy in rust</title>
+</head>
+<body>
+    <h2 id="mainheading">A cool analogy I realised in 🦀</h2>
+    <h4 class="content">As I was learning about ownership and borrowing in rust, a cool analogy I realised was that when we say assign a block of
+        data to a variable, if its in the heap, we actually assign the pointer(along with the length and capacity) of that data to that variable.
+        Then if we assign the same data block to another variable, we transfer the ownership of that data block to this new variable, and the first variable
+        no longer has the ownership, hence its invalidated. Whereas with the concept of borrowing more than one variable can have the refernce to that same block of data
+        ,provided data race conditions dont occur.</h4>
+
+        <h4 class="content">This led me to think of a cool analogy, in ownership, we deal with sticky pointers whereas with refernces we deal with non-sticky pointers. This is because
+        we see that upon assiging the data block in heap to another variable, the pointer to that block essentially "sticks" to this new variable now, leaving the old variable 
+        behind, whereas with refernces, these pointers are used freely(given race conditions are avoided) by any number of variables
+        without the pointer to the block "sticking" to the latest variable its assigned to, hence it can be thought of as dealing with "non-sticky" pointer.</h4>
+
+
+        <pre><code class="rust">
+            let s = String::from("sticky");
+            let s1 = s;    //pointer to String data in heap gets "stuck" to this new variable now, 
+            //invalidating s
+        </code></pre>
+
+        <pre><code class="rust">
+            let s = String::from("non-sticky");
+            let r1 = &s;    //pointer doesnt stick to r1 here, since borrowing of the data block occurs here
+        </code></pre>
+
+        <h4 class="content">And I think thats pretty cool. Thats my first blog 🦀</h4>
+</body>
+</html>

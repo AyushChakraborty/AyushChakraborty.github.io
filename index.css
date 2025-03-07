@@ -13,3 +13,24 @@
 #more {
     text-align: center;
 }
+
+code {
+    background-color: transparent !important;
+    font-family: "Fira Code", "Courier New", monospace;
+    color: #abb2bf;
+    display: block;
+    padding: 0px;
+    white-space: pre-wrap;
+}
+
+pre {
+    background-color: #282c34 !important; /* Ensures dark background */
+    padding: 12px;
+    border-radius: 8px;
+    overflow-x: auto;
+    color: #abb2bf;
+}
+
+pre code {
+    background-color: transparent !important;
+}

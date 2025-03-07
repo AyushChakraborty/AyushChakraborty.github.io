@@ -1,0 +1,30 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#mainheading {
+    text-align: center;
+}
+
+.content {
+    text-align: center;
+}
+
+code, pre {
+    background-color: #282c34 !important; 
+    color: #abb2bf !important;
+    font-family: "Fira Code", "Courier New", monospace;
+    padding: 12px;
+    border-radius: 8px;
+    overflow-x: auto;
+    display: block;
+}
+
+pre code {
+    background-color: inherit !important;
+}
+
+body {
+    background-color: #F5E6C4;
+}
