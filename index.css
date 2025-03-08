@@ -45,10 +45,6 @@ body {
     padding: 30px 0;
 }
 
-.projs {
-    font-size: 18px;
-}
-
 footer {
     text-align: center;
     margin-top: 400px;
@@ -65,4 +61,26 @@ footer {
     background-position: center;
     background-repeat: no-repeat;
     color: white;
+}
+
+.projs {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+#icon1 {
+    order: 1;
+    border-radius: 10px;
+    opacity: 0;
+    transition: opacity 0.9s ease-in-out;
+}
+
+#goat {
+    opacity: 0;
+    transition: opacity 0.9s ease-in-out;
+} 
+
+#pr1:hover #icon1{
+    opacity: 1;
 }

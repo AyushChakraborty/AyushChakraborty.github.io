@@ -17,9 +17,16 @@
         <div id="proj">
             <h3 class="cool">projects</h3>
             <ul>
-                <li class="projs"><a href="https://github.com/AyushChakraborty/nanoGPT">nanoGPT</a></li>
+                <li class="projs">
+                    <img src="ak.png" alt="pic of Andrej" id="icon1" width="100px" height="80px">
+                    <a href="https://github.com/AyushChakraborty/nanoGPT" id="pr1">nanoGPT</a>
+                    <p id="goat">🐐</p>
+                </li>
+                <br>
                 <li class="projs"><a href="https://github.com/AyushChakraborty/The-Runner">runner</a></li>
+                <br>
                 <li class="projs"><a href="https://github.com/AyushChakraborty/C_http_server">C http server</a></li>
+                <br>
             </ul>
         </div>
     </div>
@@ -37,4 +44,20 @@
     </footer>
 
 </body>
+<script>
+    var link1 = document.querySelector("#pr1");
+    var goat = document.querySelector("#goat");
+    var ak = document.querySelector("#icon1");
+
+    link1.addEventListener("mouseenter", (event) => {
+        goat.style.opacity = 1;
+        ak.style.opacity = 1;
+    });
+
+    link1.addEventListener("mouseleave", (event) => {
+        goat.style.opacity = 0;
+        ak.style.opacity = 0;
+    });
+
+</script>
 </html>
