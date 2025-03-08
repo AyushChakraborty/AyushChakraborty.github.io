@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="cool_rust.css">
+    <link rel="icon" href="fav.jpg" type="image/jpg">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github-dark.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/rust.min.js"></script>
@@ -11,7 +12,10 @@
     <title>Cool analogy in rust</title>
 </head>
 <body>
-    <h2 id="mainheading">A cool analogy I realised in 🦀</h2>
+    <div class="heading">
+        <h2 id="mainheading">A cool analogy I realised in 🦀</h2>
+    </div>
+
     <h4 class="content">As I was learning about ownership and borrowing in rust, a cool analogy I realised was that when we say assign a block of
         data to a variable, if its in the heap, we actually assign the pointer(along with the length and capacity) of that data to that variable.
         Then if we assign the same data block to another variable, we transfer the ownership of that data block to this new variable, and the first variable

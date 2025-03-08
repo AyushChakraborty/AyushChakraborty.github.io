@@ -1,9 +1,10 @@
-* {
+body {
     box-sizing: border-box;
-    /* margin: 0;
-    padding: 0; */
+    margin: 0;
+    padding: 0;
     font-family: 'Courier New', Courier, monospace;
     background-color: #F5E6C4;
+    overflow-x: hidden;
 }
 
 #mainheading {
@@ -14,23 +15,54 @@
     text-align: center;
 }
 
-code {
-    background-color: transparent !important;
-    font-family: "Fira Code", "Courier New", monospace;
-    color: #abb2bf;
-    display: block;
-    padding: 0px;
-    white-space: pre-wrap;
+.cool {
+    text-align: center;
+    text-decoration: underline;
 }
 
-pre {
-    background-color: #282c34 !important; /* Ensures dark background */
-    padding: 12px;
-    border-radius: 8px;
-    overflow-x: auto;
-    color: #abb2bf;
+#b1:hover {
+    color: orange;
 }
 
-pre code {
-    background-color: transparent !important;
+#b1 {
+    color: black;
+    text-decoration: none;
+}
+
+.blog {
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    padding: 10px 0;
+    margin: 20px 0;
+    text-align: center;
+}
+
+#proj {
+    padding: 10px 0;
+}
+
+.about-me {
+    padding: 30px 0;
+}
+
+.projs {
+    font-size: 18px;
+}
+
+footer {
+    text-align: center;
+    margin-top: 400px;
+    padding:50px;
+    padding-left: 40px;
+    border-top: 2px dashed black;
+    font-size: 14px;
+    width: 100%;
+    height: auto;
+    font-size: 18px;
+
+    background-image: url('sky.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
 }
